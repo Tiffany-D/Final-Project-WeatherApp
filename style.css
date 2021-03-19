@@ -11,15 +11,30 @@
 
 h1,h2 {
     color: #fde9df;
+    position: relative;
+    left: 43%;
+    top: 15%;
 }
+
 
 ul{
     list-style: none;
+    position: relative;
+
 
 }
 
 input {
     border-radius: 20px;
     text-align: center;
+    margin: 10px 3px 10px;
     
+    
+}
+
+.temperature {
+    font-size: 18px;
+    color:#f5feff;
+    position: relative;
+    left: 10%;
 }

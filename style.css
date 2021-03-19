@@ -28,6 +28,9 @@ input {
     border-radius: 20px;
     text-align: center;
     margin: 10px 3px 10px;
+    border: 2px solid #51e3d4;
+    color: #f3f9fb;
+    background: #3dbdc2;
     
     
 }

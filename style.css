@@ -1,7 +1,15 @@
 body {
-    background-image: url(mario-background.png);
+    background-image: #6892d5 #79d1c3 #c9fdd7 ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     
 }
 .card {
     background-image: url(mario.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    margin: 70px 140px;
+
 }

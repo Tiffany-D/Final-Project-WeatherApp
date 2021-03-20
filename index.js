@@ -7,17 +7,16 @@ let hours = now.getHours();
 let minutes = now.getMinutes();
 
 let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
 ];
 
 let day = days[now.getDay()];
-
 
 h2.innerHTML = `${day} ${hours}:${minutes}`;
 
@@ -36,8 +35,6 @@ function displayWeather(response) {
   document.querySelector("#feels-like").innerHTML = Math.round(
     response.data.main.feels_like
   );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
 }
 function searchCity(city) {
   let myApiKey = "09fa0f7b1ffedeb38b6e5527906a4325";
@@ -50,7 +47,6 @@ function handleSubmit(event) {
   let city = document.querySelector("#search-text-input").value;
   searchCity(city);
 }
-
 
 function getCurrentPosition(event) {
   event.preventDefault();

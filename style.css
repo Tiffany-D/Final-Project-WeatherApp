@@ -6,12 +6,12 @@
     background-position:center bottom;
     border-radius: 30px;
     margin: 70px 140px;
-    border: 2px solid #68a8a8;
+    border: 2px solid #ffb5b5;
     box-shadow:  7px 7px 13px #347474;
 }
 
 h1,h2 {
-    color: #fde9df;
+    color: #ffb5b5;
     position: relative;
     left: 5px;
     
@@ -31,14 +31,14 @@ input {
     text-align: center;
     padding: 3px 5px;
     margin: 10px 3px 10px;
-    border: 2px solid #51e3d4;
+    border: 2px solid #ffb5b5;
     position: relative;
     left: 25%;
-    color: #f3f9fb;
-    background: #3dbdc2;
+    color: #fffdfb;
+    background: #ffcbcb;
     
     
-}
+
 
 button {
     border-radius: 7px;

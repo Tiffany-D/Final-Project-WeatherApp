@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="index.js"/>
-        <link rel="stylesheet" href="Outdoor.png"/>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/index.js" />
+    <link rel="stylesheet" href="src/Outdoor.png" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@593&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@593&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="card" style="width: 50rem; height: 30rem;" >
+        <div class="card" style="width: 50rem; height: 30rem;">
             <div class="card-body">
-    <heading>  
+                <heading>
 
-         <form>
-        <input type="submit" value="📌 Location"/>      
-        <input type="text"  id="search-text-input "placeholder="Enter a city"/>
-        <input type="submit" value="Search 🔎"/> 
-       
-         </form>
-        <h1 id="city">London</h1>
-        <h2 > Thursday</h2> 
-     <span class="temperature" id="temperature">15°C </span>
-        <ul>
-            <li>
-               🌬  Wind: 7Km/h
-            </li>
-            <li>
-               🌡  Feels like: 7°C
-            </li>
-            <li>
-               💧  Humidity: 30%
-            </li>
-        </ul>
-        
-       
-       
-</heading>
-      
+                    <form id="search-form">
+                        <input type="submit" id="current-location" value="📌 Location" />
+                        <input type="text" id="search-text-input " placeholder="Enter a city" />
+                        <input type="submit" value="Search 🔎" />
+
+                    </form>
+                    <h1 id="city">London</h1>
+                    <h2 id="day"> Thursday</h2>
+                    <span class="temperature" id="temperature">15°C </span>
+
+                    <ul>
+                        <li id="wind">
+                            🌬 Wind: 7Km/h
+                        </li>
+                        <li id="feels-like">
+                            🌡 Feels like: 7°C
+                        </li>
+                        <li id="humidity">
+                            💧 Humidity: 30%
+                        </li>
+                    </ul>
+
+
+
+                </heading>
+
+            </div>
+        </div>
     </div>
-    </div>
-</div>
     </heading>
 </body>
+
 </html>

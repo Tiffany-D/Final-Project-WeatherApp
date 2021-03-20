@@ -35,6 +35,10 @@ ul{
     font-size: 25px;
     list-style: none;
     text-align: center;
+    position: fixed;
+    left: 40%;
+    bottom: 38%;
+
     
 
 
@@ -51,6 +55,7 @@ input {
     color: #757a79;
     background: #ffcbcb;
 }
+
     
 
 .temperature {

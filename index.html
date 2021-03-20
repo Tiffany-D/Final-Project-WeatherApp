@@ -7,7 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="index.js"/>
         <link rel="stylesheet" href="Outdoor.png"/>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@593&display=swap" rel="stylesheet">
@@ -21,13 +23,13 @@
 
          <form>
         <input type="submit" value="📌 Location"/>      
-        <input type="text" placeholder="Enter a city"/>
+        <input type="text"  id="search-text-input "placeholder="Enter a city"/>
         <input type="submit" value="Search 🔎"/> 
        
          </form>
         <h1 id="city">London</h1>
-        <h2 id="day-of-the-week"> Thursday</h2> 
-     <span class="temperature">15°C </span>
+        <h2 > Thursday</h2> 
+     <span class="temperature" id="temperature">15°C </span>
         <ul>
             <li>
                🌬  Wind: 7Km/h

@@ -3,7 +3,7 @@
     background-image: url(Outdoor.png);
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position:bottom 2px left;
+    background-position:center bottom;
     border-radius: 30px;
     margin: 70px 140px;
     border: 2px solid #68a8a8;
@@ -13,14 +13,15 @@
 h1,h2 {
     color: #fde9df;
     position: relative;
-    left: 43%;
-    top: 15%;
+    left: 5px;
+    
 }
 
 
 ul{
     list-style: none;
-    position: relative;
+    text-align: center;
+    font-weight: bold;
 
 
 }
@@ -28,10 +29,11 @@ ul{
 input {
     border-radius: 10px;
     text-align: center;
+    padding: 3px 5px;
     margin: 10px 3px 10px;
     border: 2px solid #51e3d4;
     position: relative;
-    left: 35%;
+    left: 25%;
     color: #f3f9fb;
     background: #3dbdc2;
     

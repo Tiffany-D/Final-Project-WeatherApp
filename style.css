@@ -1,8 +1,9 @@
 
 .card {
-    background-image: url(mario.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(Outdoor.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:bottom 2px left;
     border-radius: 30px;
     margin: 70px 140px;
     border: 2px solid #68a8a8;
@@ -29,10 +30,18 @@ input {
     text-align: center;
     margin: 10px 3px 10px;
     border: 2px solid #51e3d4;
+    position: relative;
+    left: 35%;
     color: #f3f9fb;
     background: #3dbdc2;
     
     
+}
+
+button {
+    border-radius: 15px;
+    position: relative;
+    left: 25%;
 }
 
 .temperature {

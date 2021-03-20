@@ -65,3 +65,16 @@ input {
     position: relative;
     left: 5px;
 }
+
+.description {
+  font-family: "Caveat", cursive;
+  color: #225763;
+  font-size: 22px;
+  position: relative;
+  left: 5px;
+}
+
+footer {
+    text-align: center;
+    
+}

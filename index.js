@@ -35,6 +35,7 @@ function displayWeather(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dayElement.innerHTML = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${}@2x.png`)
  
 }
 let apiKey = "09fa0f7b1ffedeb38b6e5527906a4325";

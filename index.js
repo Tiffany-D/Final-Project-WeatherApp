@@ -3,13 +3,10 @@ function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
   let minutes = date.getMinutes();
-  let day = date.getDay();
-
-return`${day} ${hours}:${minutes}`;
-
+  if (minutes < 10) {
+  minutes = `0${minutes}`;
 }
-
-let days = [
+  let days = [
   "Sunday",
   "Monday",
   "Tuesday",
@@ -18,12 +15,10 @@ let days = [
   "Friday",
   "Saturday"
 ];
+  let day = date.getDay();
 
+return`${day} ${hours}:${minutes}`;
 
-
-
-if (minutes < 10) {
-  `0${minutes}`;
 }
 
 function displayWeather(response) {
@@ -43,6 +38,7 @@ function displayWeather(response) {
  
 }
 let apiKey = "09fa0f7b1ffedeb38b6e5527906a4325";
+let city = "London";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayWeather);

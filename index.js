@@ -1,10 +1,13 @@
-let now = new Date();
 
-let h2 = document.querySelector("h2");
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let day = date.getDay();
 
-let date = now.getDate();
-let hours = now.getHours();
-let minutes = now.getMinutes();
+return`${day} ${hours}:${minutes}`;
+
+}
 
 let days = [
   "Sunday",
@@ -16,9 +19,9 @@ let days = [
   "Saturday"
 ];
 
-let day = days[now.getDay()];
 
-h2.innerHTML = `${day} ${hours}:${minutes}`;
+
+
 if (minutes < 10) {
   `0${minutes}`;
 }
@@ -36,6 +39,7 @@ function displayWeather(response) {
   let windElement = document.querySelector("#wind");
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  dayElement.innerHTML = formatDate(response.data.dt * 1000);
  
 }
 let apiKey = "09fa0f7b1ffedeb38b6e5527906a4325";

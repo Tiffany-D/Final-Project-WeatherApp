@@ -75,12 +75,14 @@ input {
 .description {
   font-family: "Caveat", cursive;
   color: #225763;
-  text-transform: capitalize;
   font-size: 22px;
   position: relative;
   left: 5px;
 }
 
+.description :first-letter{
+    text-transform: capitalize;
+}
 footer {
     text-align: center;
     

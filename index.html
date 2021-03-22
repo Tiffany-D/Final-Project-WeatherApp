@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/styles.css" />
-    <link rel="stylesheet" href="src/index.js" />
-    <link rel="stylesheet" href="src/Outdoor.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.js" />
+    <link rel="stylesheet" href="Outdoor.png" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,20 +29,19 @@
                         <input type="submit" value="Search 🔎" />
 
                     </form>
-                    <h1 id="city">London</h1>
+                    <h1 id="city"></h1>
                     <h2 id="day"> Thursday</h2>
-                    <span class="temperature" id="temperature">15°C </span>
-                    <span class="description" id="description"> Sunny </span>
+                    <strong id="temperature"></strong>
+                    <span class="units"> °C | °F </span>
+                    <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                    <span class="description" id="description"></span>
 
                     <ul>
-                        <li id="wind">
-                            🌬 Wind: 7Km/h
+                        <li>
+                            🌬 Wind: <span id="wind"> Km/h </span>
                         </li>
-                        <li id="feels-like">
-                            🌡 Feels like: 7°C
-                        </li>
-                        <li id="humidity">
-                            💧 Humidity: 30%
+                         <li>
+                            💧 Humidity: <span id="humidity"> % </span>
                         </li>
                     </ul>
 

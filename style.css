@@ -8,6 +8,8 @@
     margin: 70px 140px;
     border: 2px solid #ffb5b5;
     box-shadow:  7px 7px 13px #ff467e;
+    max-width: 900px;
+    max-height: 700px;
 }
 
 h1 {
@@ -37,7 +39,7 @@ ul{
     text-align: center;
    position: relative;
   left: 0%;
-  bottom: 9%;
+  bottom: 16%;
 
     
 
@@ -66,9 +68,14 @@ input {
     left: 5px;
 }
 
+.units {
+    margin-left: 6px;
+}
+
 .description {
   font-family: "Caveat", cursive;
   color: #225763;
+  text-transform: capitalize;
   font-size: 22px;
   position: relative;
   left: 5px;

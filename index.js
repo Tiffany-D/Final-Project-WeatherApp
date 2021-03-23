@@ -20,12 +20,6 @@ return`${day} ${hours}:${minutes}`;
 
 }
 
-
-
-  
-
-
-
 function displayWeather(response) {
   
   let temperatureElement = document.querySelector("#temperature");

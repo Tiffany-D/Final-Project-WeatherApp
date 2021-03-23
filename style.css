@@ -1,16 +1,22 @@
 
 .card {
-    background-image: url(Outdoor.png);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position:center bottom;
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
     border-radius: 30px;
     margin: 70px 140px;
-    border: 2px solid #ffb5b5;
-    box-shadow:  7px 7px 13px #ff467e;
+    border: 0.5px solid #b1f4cf;
+    box-shadow:  7px 7px 13px #38598b;
     max-width: 900px;
     max-height: 700px;
 }
+
+.forecast{
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    border-radius: 30px;
+    margin: 70px 140px;
+    border: 2px solid #ffb5b5;
+    text-align: center;
+}
+
 .weather-temperature .active{
     color: #ff467e;
     cursor: default;
@@ -59,16 +65,20 @@ ul{
 
 input {
     border-radius: 10px;
-    text-align: center;
     padding: 3px 5px;
     margin: 10px 3px 10px;
-    border: 2px solid #ffb5b5;
+    border: 1px solid #b1f4cf;
     position: relative;
     left: 25%;
-    color: #757a79;
-    background: #ffcbcb;
+    color: #383838;
+    background: #fcfefe;
 }
-
+.btn-btn-primary{
+    color: #fcfefe;
+    background: #38598b;
+    padding: 8px;
+    border: 1px solid #b1f4cf;
+}
     
 
 .temperature {
@@ -96,5 +106,6 @@ input {
 }
 footer {
     text-align: center;
+    text-decoration: none;
     
 }

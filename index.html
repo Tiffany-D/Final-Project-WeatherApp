@@ -21,6 +21,7 @@
     <div class="container">
         <div class="card" style="width: 50rem; height: 30rem">
             <div class="card-body">
+                <div class="clearfix weather-temperature">
                 <heading>
                     <form id="search-form">
                         <input type="submit" id="current-location" value="📌 Location" />
@@ -30,7 +31,7 @@
                     <h1 id="city"></h1><span id="date">Last updated: </span>
                     <h2 id="day">Thursday</h2>
                     <strong id="temperature"></strong>
-                    <span class="units"> °C | °F </span>
+                    <span class="units"> <a href="#" id="celsius" class="active">°C </a>| <a href="#" id="fahrenheit">°F </a> </span>
                     <br />
                     <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon" />
                     <span class="description" id="description"></span>
@@ -42,6 +43,7 @@
             </div>
         </div>
     </div>
+</div>
     <footer>
         <a href="https://github.com/Tiffany-D/Final-Project-WeatherApp">Open-source code</a>
         by Tiffany D.

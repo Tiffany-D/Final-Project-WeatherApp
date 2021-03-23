@@ -45,11 +45,7 @@ function displayWeather(response) {
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
  
 }
-let apiKey = "09fa0f7b1ffedeb38b6e5527906a4325";
-let city = "London";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}&units=metric`;
 
-axios.get(apiUrl).then(displayWeather);
 
 
 
@@ -59,15 +55,57 @@ form.addEventListener("submit", handleSubmit);
 
 function searchCity(city) {
   let apiKey = "09fa0f7b1ffedeb38b6e5527906a4325";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeather);
+let city = "London";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=london&appid=${apiKey}&units=metric`;
+
+axios.get(apiUrl).then(displayWeather);
 }
 function handleSubmit(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#search-text-input");
   searchCity(cityInput.value);
-//}
+}
+function convertToF(event) {
+  event.preventDefault();
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitDegrees = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitDegrees); 
+}
 
+function convertToC(event) {
+  event.preventDefault();
+   celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+
+
+
+
+
+
+
+
+let fahrenheitLink = document.querySelector(#fahrenheit);
+fahrenheitLink.addEventListener("click", convertToF);
+
+
+let celsiusLink = document.querySelector(#celsius);
+celsiusLink.addEventListener("click", convertToC);
+
+
+let celsiusTemperature = null;
+
+
+
+
+
+
+//
 function getCurrentPosition(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);

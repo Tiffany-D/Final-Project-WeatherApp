@@ -11,6 +11,17 @@
     max-width: 900px;
     max-height: 700px;
 }
+.weather-temperature .active{
+    color: #ff467e;
+    cursor: default;
+    text-decoration: none;
+
+}
+
+.weather-temperature .active:hover{
+   text-decoration: none;
+    
+}
 
 h1 {
     color: #ffb5b5;

@@ -54,11 +54,24 @@ h2 {
     left: 5px;
 }
 
-.sun{
-    width: 100px;
-    float: right;
-   
+#Astronaut  {
+  animation: astronautMoving infinite 3s linear;
 }
+
+@keyframes astronautMoving {
+  0% {
+    
+    transform: rotate(0) translate3D(-50%, -50%, 0);
+  }
+  30% {
+    
+  }
+  100% {
+    
+    transform: rotate(360deg) translate3D(-50%, -50%, 0);
+  }
+}
+
 
 
 

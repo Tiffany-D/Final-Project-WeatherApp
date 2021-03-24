@@ -105,3 +105,8 @@ celsiusLink.addEventListener("click", convertToC);
 
 let celsiusTemperature = null;
 
+let astronautMoving = [
+  { transform: 'rotate(0) translate3D(-50%, -50%, 0)' },
+  {  offset: 0.3},
+  { transform: 'rotate(360deg) translate3D(-50%, -50%, 0)' }
+];

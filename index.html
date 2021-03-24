@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="sun.svg"/>
+    <link rel="stylesheet" href="Astronaut/Astronaut.png"/>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -34,14 +34,17 @@
                     <br />
                     <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon" />
                     <span class="description" id="description"></span>
-                    <ul>
+                                        <div style="float: right;">
+                   <img class="astronaut" src="Astronaut/Astronaut.png" width="200"/>
+                </div>
+                
+                <ul>
                         <li>Wind: <span id="wind"> Km/h </span></li>
                         <li>Humidity: <span id="humidity"> % </span></li>
                     </ul>
-                    <div style="float: right;">
-                   <img class="sun" src="sun.svg"/>
-</div>
-                    <br/>
+
+                    
+<br/>
                     <hr/>
                     <br/>
                     <div class="card-group">

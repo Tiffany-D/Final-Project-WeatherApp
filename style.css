@@ -1,20 +1,27 @@
 
 .card {
-    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
     border-radius: 30px;
-    margin: 70px 140px;
-    border: 0.5px solid #b1f4cf;
-    box-shadow:  7px 7px 13px #38598b;
+    display: block;
+    margin: 70px 155px;
+    border: 0.5px solid #c1c0b9;
+    box-shadow:  7px 7px 13px #3b0944;
     max-width: 900px;
     max-height: 700px;
 }
 
-.forecast{
-    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
-    border-radius: 30px;
-    margin: 70px 140px;
-    border: 2px solid #ffb5b5;
+.col {
+    display: grid;
+    grid-template-rows: max-content 80px 1fr;
+    border: 0.005px solid #c1c0b9;
+    margin: 5px 50px;
+    max-height: 190px;
+    max-width: 180px;
     text-align: center;
+    align-items: center;
+}
+hr {
+    color: #fcfefe;
 }
 
 .weather-temperature .active{
@@ -29,29 +36,36 @@
     
 }
 
+
 h1 {
-    color: #ffb5b5;
+    color: #3b0944;
     font-family:'Lato', sans-serif;
-    font-size: 50px;
+    font-size: 15px;
     position: relative;
     left: 5px;
     
 }
 
 h2 {
-     color: #ffb5b5;
+     color: #3b0944;
     font-family:'Lato', sans-serif;
-    font-size: 40px;
-    position: relative;
+    font-size: 15px;
+    position: static;
     left: 5px;
+}
+
+.sun{
+    width: 100px;
+    float: right;
+   
 }
 
 
 
 ul{
-    color: #38598b;
+    color: #3b0944;
     font-family: 'Lato', sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     list-style: none;
     text-align: center;
    position: relative;
@@ -67,17 +81,17 @@ input {
     border-radius: 10px;
     padding: 3px 5px;
     margin: 10px 3px 10px;
-    border: 1px solid #b1f4cf;
+    border: 1px solid #3b0944;
     position: relative;
-    left: 25%;
+    left: 33%;
     color: #383838;
     background: #fcfefe;
 }
 .btn-btn-primary{
     color: #fcfefe;
-    background: #38598b;
+    background: #5e227f;
     padding: 8px;
-    border: 1px solid #b1f4cf;
+    border: 1px solid #3b0944;
 }
     
 
@@ -107,5 +121,6 @@ input {
 footer {
     text-align: center;
     text-decoration: none;
+    display: block;
     
 }

@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="sun.svg"/>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,45 +19,71 @@
 
 <body>
     <div class="container">
-        <div class="card" style="width: 50rem; height: 30rem">
+        <div class="card" style="width: 50rem; height: 40rem">
             <div class="card-body">
                 <div class="clearfix weather-temperature">
                 <heading>
                     <form id="search-form">
-                        <input type="submit" id="current-location" value="📌 Location" />
-                        <input type="text" id="search-text-input " placeholder="Enter a city" autocomplete="off"/>
+                        <input type="text" id="search-text-input" placeholder="Enter a city" autocomplete="off"/>
                         <input type="submit" class="btn-btn-primary" value="Search 🔎" />
                     </form>
-                    <h1 id="city"></h1><span id="date">Last updated: </span>
-                    <h2 id="day">Thursday</h2>
+                    <h1 id="city">London</h1>
+                    <h2 id="day">Thursday,23 March </h2> 
                     <strong id="temperature"></strong>
                     <span class="units"> <a href="#" id="celsius" class="active">°C </a>| <a href="#" id="fahrenheit">°F </a> </span>
                     <br />
                     <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon" />
                     <span class="description" id="description"></span>
                     <ul>
-                        <li>🌬 Wind: <span id="wind"> Km/h </span></li>
-                        <li>💧 Humidity: <span id="humidity"> % </span></li>
+                        <li>Wind: <span id="wind"> Km/h </span></li>
+                        <li>Humidity: <span id="humidity"> % </span></li>
                     </ul>
+                    <div style="float: right;">
+                   <img class="sun" src="sun.svg"/>
+</div>
+                    <br/>
+                    <hr/>
+                    <br/>
+                    <div class="card-group">
+                        <div class="col">
+                          
+                            <div class="card-body">
+                                <h5 class="day-week">Thu</h5>
+                                <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon" />
+                                <p class="card-text"> 17°</p>
+                              
+                            </div>
+                        </div>
+               
+                
+                        <div class="col">
+                            
+                            <div class="card-body">
+                                <h5 class="day-week">Fri</h5>
+                                <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon" />
+                                <p class="card-text">19°</p>
+                              
+                            </div>
+                        </div>
+                        <div class="col">
+                            
+                            <div class="card-body">
+                                <h5 class="day-week">Sat</h5>
+                                <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon" />
+                                <p class="card-text">16°</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
                 </heading>
             </div>
         </div>
     </div>
 </div>
-    
-    <div class="forecast" style="width: 25rem;">
-        <div class="card-header">
-            Forecast
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">A fifth item</li>
-            <li class="list-group-item">A sixth item</li>
-        </ul>
-    </div>
+
+
                     
                     <footer>
         <a href="https://github.com/Tiffany-D/Final-Project-WeatherApp">Open-source code</a>

@@ -31,7 +31,7 @@ function formatDate(timestamp) {
   "Friday",
   "Saturday"
   ];
-  let month = months[date.getMonths()];
+  let month = months[date.getMonth()];
  let day = days[date.getDay()];
 return`${day} ${month}, ${hours}:${minutes}`;
 
@@ -89,6 +89,7 @@ function convertToC(event) {
   event.preventDefault();
    celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
+  let celsiusTemperature = (farhrenheitDegrees * 5) / 9 - 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
@@ -103,10 +104,5 @@ celsiusLink.addEventListener("click", convertToC);
 
 
 
-let celsiusTemperature = null;
 
-let astronautMoving = [
-  { transform: 'rotate(0) translate3D(-50%, -50%, 0)' },
-  {  offset: 0.3},
-  { transform: 'rotate(360deg) translate3D(-50%, -50%, 0)' }
-];
+

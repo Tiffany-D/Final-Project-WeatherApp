@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="Astronaut/Astronaut.png"/>
+    <link rel="stylesheet" href="Astronaut/Astronaut-01.svg"/>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -27,24 +27,20 @@
                         <input type="text" id="search-text-input" placeholder="Enter a city" autocomplete="off"/>
                         <input type="submit" class="btn-btn-primary" value="Search 🔎" />
                     </form>
-                    <h1 id="city">London</h1>
-                    <h2 id="day">Thursday,23 March </h2> 
+                    <h1 id="city"></h1>
+                    <h2 id="day"> </h2> 
                     <strong id="temperature"></strong>
                     <span class="units"> <a href="#" id="celsius" class="active">°C </a>| <a href="#" id="fahrenheit">°F </a> </span>
-                    <br />
+                                            <div style="float: right;">
+                   <img class="astronaut" src="Astronaut/Astronaut-01.svg" width="150"/>
+                </div>
                     <img src="http://openweathermap.org/img/wn/01d@2x.png" id="icon" />
                     <span class="description" id="description"></span>
-                                        <div style="float: right;">
-                   <img class="astronaut" src="Astronaut/Astronaut.png" width="200"/>
-                </div>
-                
-                <ul>
-                        <li>Wind: <span id="wind"> Km/h </span></li>
-                        <li>Humidity: <span id="humidity"> % </span></li>
+                     <ul>
+                        <li>Wind: <span id="wind"> </span>Km/h </li>
+                        <li> Humidity: <span id="humidity">  </span>%</li>
                     </ul>
-
-                    
-<br/>
+                    <br/>
                     <hr/>
                     <br/>
                     <div class="card-group">

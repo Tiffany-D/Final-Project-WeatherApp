@@ -46,6 +46,8 @@ function displayWeather(response) {
   cityElement.innerHTML = response.data.name;
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
+
+  celsiusTemperature = response.data.main.temp;
   
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
@@ -85,16 +87,14 @@ function convertToF(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitDegrees); 
 }
-
 function convertToC(event) {
   event.preventDefault();
    celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
-  let celsiusTemperature = (farhrenheitDegrees * 5) / 9 - 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
-
+let celsiusTemperature = null;
 
 
 

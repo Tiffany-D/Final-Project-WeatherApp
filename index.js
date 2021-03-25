@@ -2,6 +2,7 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
+  let dayMonth = date.getDate();
   
  let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -33,7 +34,7 @@ function formatDate(timestamp) {
   ];
   let month = months[date.getMonth()];
  let day = days[date.getDay()];
-return`${day} ${month}, ${hours}:${minutes}`;
+return`${day} ,${dayMonth} ${month} ${hours}:${minutes}`;
 
 }
 

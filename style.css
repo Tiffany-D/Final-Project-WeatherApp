@@ -81,7 +81,7 @@ input {
     margin: 10px 3px 10px;
     border: 1px solid #3b0944;
     position: relative;
-    left: 33%;
+    left: 20%;
     color: #383838;
     background: #fcfefe;
 }
@@ -112,7 +112,11 @@ input {
   
 }
 
-
+img {
+    position: relative;
+    bottom: 20px;
+    
+}
 .description :first-letter{
     text-transform: capitalize;
 }

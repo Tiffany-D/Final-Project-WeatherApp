@@ -1,4 +1,8 @@
-
+.container {
+    display: grid;
+    place-items: center;
+    align-content: flex-start;
+}
 .card {
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
     border-radius: 30px;
@@ -62,6 +66,7 @@ ul{
     list-style: none;
     text-align: center;
     margin: 5px 35px 25px 65px;
+    
 
 
 

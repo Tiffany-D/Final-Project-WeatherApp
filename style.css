@@ -1,17 +1,12 @@
 
-.container {
-    display: grid;
-    place-items: center;
-    align-content: flex-start;
-}
 .card {
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
     border-radius: 30px;
     display: block;
-    margin: 70px 160px;
+    margin: 70px auto;
     border: 0.5px solid #c1c0b9;
     box-shadow:  7px 7px 13px #3b0944;
-    max-width:  800px;
+    max-width:  480px;
     max-height: 800px;
 }
 

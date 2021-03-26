@@ -1,3 +1,4 @@
+
 .container {
     display: grid;
     place-items: center;
@@ -115,7 +116,7 @@ input {
 img {
     position: relative;
     bottom: 20px;
-    
+
 }
 .description :first-letter{
     text-transform: capitalize;

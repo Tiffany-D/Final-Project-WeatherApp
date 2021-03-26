@@ -61,7 +61,7 @@ ul{
     font-weight: 40;
     list-style: none;
     text-align: center;
-    margin: 5px 35px auto;
+    margin: 5px 35px 25px 65px;
     
 
 
@@ -74,7 +74,7 @@ ul{
 input {
     border-radius: 10px;
     padding: 3px 5px;
-    margin: 10px 3px 10px;
+    margin: 10px auto 10px;
     border: 1px solid #3b0944;
     position: relative;
     left: 20%;
